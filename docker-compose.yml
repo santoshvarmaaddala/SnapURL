@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  shortener:
+    build: ./services/shortener
+    ports:
+      - "8001:8000"
+
+  redirector:
+    build: ./services/redirector
+    ports:
+      - "8002:8000"
+
+  api-gateway:
+    build: ./services/api-gateway
+    ports:
+      - "8000:8000"
