@@ -19,3 +19,8 @@ services:
     build: ./services/api-gateway
     ports:
       - "8000:8000"
+
+  url-storage:
+    build: ./services/url-storage
+    ports:
+      - "8003:8000"
