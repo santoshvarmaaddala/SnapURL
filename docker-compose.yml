@@ -24,8 +24,3 @@ services:
     build: ./services/url-storage
     ports:
       - "8003:8000"
-
-  analytics:
-    build: ./services/analytics
-    ports:
-      - "8004:8000"
