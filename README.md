@@ -93,6 +93,7 @@ All microservices are isolated in their own containers and communicate via Docke
 +--------------------------+                           +--------------------------+
 
 ```
+<img width="1536" height="1024" alt="ChatGPT Image Jul 10, 2025, 05_31_11 PM" src="https://github.com/user-attachments/assets/82c9ba74-65f7-4ae0-b250-79f40bbd5a42" />
 ---
 📦 Running the Project
 
