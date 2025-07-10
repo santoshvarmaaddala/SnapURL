@@ -1,5 +1,9 @@
 from strategies.base import SlugGenerator
 import requests
+from pydantic import BaseModel
+
+class ShortenResponse(BaseModel):
+    shortcode : str
 
 class ShortnerService:
 

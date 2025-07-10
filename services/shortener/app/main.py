@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from service.shortner_service import ShortnerService
+from service.shortner_service import ShortnerService, ShortenResponse
 from strategies.base62 import Base62Generator
 
 app = FastAPI()
@@ -13,7 +13,7 @@ def health_check():
     return {"status": "Shortner is healthy"}
 
 
-@app.post("/shorten")
+@app.post("/shorten", response_model=ShortenResponse)
 def shorten(url: str):
     try:
         return service.shorten_url(url)
